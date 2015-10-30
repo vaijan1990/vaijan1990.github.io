@@ -1,0 +1,182 @@
+/**** General ****/
+html {
+  margin: 0;
+  padding: 0;
+  border: 10px solid black;
+  }
+body {
+  float: left;
+  background: linear-gradient(#ffa949, transparent 20%),url("bg1.jpg") no-repeat;
+}
+
+/**** Introduction ****/
+h1 {
+  text-align: center;
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 45px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  color: white;
+}
+
+h2 {
+  font-family: fantasy;
+  font-weight: bold;
+  text-align: center;
+  background: url("bg2.jpg") no-repeat center;
+  background-size: 100%;
+  padding: 15px 40px;
+  border: 10px solid transparent;
+/*  -webkit-border-image: url(border1.jog) 20 round; /* Safari 3.1-5 */
+/*  -o-border-image: url(border1.jpg) 20 round; /* Opera 11-12.1 */
+  border-image: url(border1.jpg) 20 round;
+  color: #34495e;
+}
+ h2:hover{
+   font-size: 35px;
+   font-weight: lighter;
+   text-shadow: 2px 2px 5px red;
+   color:#ecf0f1;
+ }
+
+/** section  ***/
+ .summary {
+   border-radius:15px 50px 50px 15px;
+   background-color: orange;
+    width: 40%;
+    height: 20%;
+    padding: 5px;
+    padding-left: 20px;
+    border: 5px solid #c0392b;
+    border-left: 6px dotted red;
+    text-align: left;
+    font-family: cursive;
+    transition: width 1s;
+    opacity: 0.7;
+ }
+ .summary:hover{
+   width:95%;
+   background: url('bg5.jpg') no-repeat;
+   background-position: right;
+   color: black;
+   font-weight: 600;
+   font-size: 15px;
+ }
+ .preamble {
+  background:url("bg2.jpg") no-repeat center;
+  border-radius: 15px;
+  background-size: cover;
+  padding-left: 4%;
+  padding-top: 1%;
+ }
+  /*.preamble h3,.explanation h3,.participation h3, .benefits h3, .requirements h3{
+     transform: rotate(-90deg);
+     transform-origin: left;
+     position: absolute;
+     background: linear-gradient(#e74c3c, #c0392b);
+     text-overflow: clip;
+     top:55%;
+  }*/
+/*  Main section or explanation*/
+  .main{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  }
+  .explanation,.participation, .benefits, .requirements{
+    margin: 1% 5%;
+    background: url("bg3.jpg") ;
+    border-radius: 35px 35px;
+    padding: 1%;
+    border: 2px solid #2c3e50;
+    border-right: 5px solid #34495e;
+    box-shadow: 10px 10px 5px#bdc3c7;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: #34495e;
+  }
+
+p[role="contentinfo"] {
+    text-align: center;
+    font-family:  sans-serif;
+    font-stretch: expanded;
+    font-style: italic;
+    color: black;
+}
+  /*design selection */
+.design-selection h3 {
+      margin: 3% auto 2%;
+      background: url('border1.jpg') repeat-x top right, url('border1.jpg') repeat-x bottom left;
+      background-size:25%;
+      line-height: 2;
+}
+.design-selection  ul li a {
+     font-family: cursive;
+     font-style: italic;
+     color: #3f3d3a;
+}
+
+.design-selection li {
+      text-align: center;
+      list-style: none;
+      background: orange;
+      border-radius: 10px 15px 25px 12px;
+  }
+.select {
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+/* archives and resources*/
+
+.zen-resources {
+float: right;
+background-image: url(bg5.jpg);;
+padding: 10px;
+font-size: 22px;
+}
+.design-archives{
+  float: left;
+  background-image: url(bg5.jpg);
+  padding: 10px;
+  font-size: 22px;
+}
+.zen-resources, .design-archives {
+width:45%;
+height: 250px;
+}
+
+.design-archives li a, .zen-resources li a {
+text-decoration:none;
+color: black;
+}
+
+.resources, .archives {
+  font-family: cursive;
+  font-size: 25px;
+}
+
+/* Footer*/
+
+footer {
+  text-align: center;
+  margin-top: 2%;
+}
+footer a {
+  background: linear-gradient(to right, grey , #e67e22);
+  border-radius: 60px 10px;
+  padding: 10px;
+  font-family: fantasy;
+  color: #34495e;
+  }
