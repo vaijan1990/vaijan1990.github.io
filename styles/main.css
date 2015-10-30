@@ -95,6 +95,13 @@ li ul {
 nav ul ul {
     background-color: #8b8378;
     margin-left: 0px;    
+    border: 1px solid white;
+}
+nav ul ul ul{
+    background-color: #364c62;
+    border-radius:10px 10px;
+    margin-left: 0px;
+    
 }
 
 li:hover>ul{
@@ -104,6 +111,9 @@ li:hover>ul{
 }
 
 nav ul ul a {        
+        padding: 0px 10px 0px;
+}
+nav ul ul  ul a {        
         padding: 0px 10px 0px;
 }
 
@@ -224,7 +234,7 @@ nav a, nav a:visited {
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: #34495e;
+  color: #bdc3c7;
 }
 
 /* ======= Footer ======= */
