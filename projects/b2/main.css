@@ -1,8 +1,9 @@
-/**** General ****/
+  /**** General ****/
 html {
   margin: 0;
   padding: 0;
   border: 10px solid black;
+  overflow-x: hidden;
   }
 body {
   float: left;
@@ -11,10 +12,13 @@ body {
 
 /**** Introduction ****/
 h1 {
+
+  background: orange;
+  border:2px dotted red;
   text-align: center;
   font-family: cursive;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 85%;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   color: white;
 }
@@ -69,14 +73,6 @@ h2 {
   padding-left: 4%;
   padding-top: 1%;
  }
-  /*.preamble h3,.explanation h3,.participation h3, .benefits h3, .requirements h3{
-     transform: rotate(-90deg);
-     transform-origin: left;
-     position: absolute;
-     background: linear-gradient(#e74c3c, #c0392b);
-     text-overflow: clip;
-     top:55%;
-  }*/
 /*  Main section or explanation*/
   .main{
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -84,6 +80,8 @@ h2 {
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;
   display: flex;
+  background: url("bg3.jpg") ;
+  border-radius: 35px 35px;
   -moz-box-orient: vertical;
   -webkit-box-orient: vertical;
   -ms-box-orient: vertical;
@@ -92,9 +90,7 @@ h2 {
   flex-direction: column;
   }
   .explanation,.participation, .benefits, .requirements{
-    margin: 1% 5%;
-    background: url("bg3.jpg") ;
-    border-radius: 35px 35px;
+     margin: 1% 5%;
     padding: 1%;
     border: 2px solid #2c3e50;
     border-right: 5px solid #34495e;
@@ -104,6 +100,10 @@ h2 {
     font-weight: lighter;
     letter-spacing: 1px;
     color: #34495e;
+  }
+  .design-selection h3, .main h3 {
+    text-decoration: underline;
+    font-style: italic;
   }
 
 p[role="contentinfo"] {
@@ -180,3 +180,87 @@ footer a {
   font-family: fantasy;
   color: #34495e;
   }
+
+  /** Media Queries **/
+  /* Queries */
+@media screen and (min-width: 960px ) {
+  h1 {
+    font-size: 35px;
+  }
+  .preamble {
+    width:50%;
+    margin-top: 15px;
+    padding-bottom: 10px;
+
+  }
+
+.design-selection {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  background: -webkit-linear-gradient(left,#D38312 ,#A83279); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(to right, #C9FFBF ,#FFAFBD) no-repeat;
+ background-size: 100% 100%;
+ padding: 10px;
+ border-radius: 15px 65px 75px 45px;
+
+}
+.design-selection h3, .design-selection li {
+    background  : none;
+}
+.design-selection h3 {
+  text-decoration: underline;
+}
+.design-selection ul li a {
+text-decoration: none;
+}
+
+.supporting {
+  margin-top: 3%;
+  background: url("bg3.jpg") ;
+  height: 1200px;
+}
+.supporting h3{
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#zen-explanation,#zen-participation,#zen-benefits{
+  width:60%;
+  margin: 0px;
+  font-size: 15px;
+  background: none;
+}
+#zen-requirements {
+  margin: 0px;
+  font-size: 15px
+}
+.design-archives{
+    width: 15%;
+    position: relative;
+    bottom: 1200px;
+    left: 850px;
+    background: none;
+}
+.zen-resources {
+  width: 15%;
+  position: relative;
+  bottom: 1200px;
+  background: none;
+  float: none;
+  left: 850px;
+
+}
+footer {
+  position: relative;
+  margin-top: 100px; /* negative value of footer height */
+  clear:both;
+}
+footer a {
+  text-decoration: none;
+  font-size: 25px;
+  padding-right: 25px;
+}
+}
