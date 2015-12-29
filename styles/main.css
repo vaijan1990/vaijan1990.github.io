@@ -12,6 +12,11 @@ body {
   padding: 0 5%;
 }
 
+.reflection-container {
+  background-image: url("../images/developer.jpg");
+
+}
+
 a {
   text-decoration: none;
 }
@@ -36,7 +41,7 @@ header {
   float: left;
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
-       
+
   width: 100%;
 }
 
@@ -88,38 +93,38 @@ nav a {
   padding: 15px 10px;
 }
 
-li ul { 
-   display: none; 
+li ul {
+   display: none;
 }
 
 nav ul ul {
     background-color: #8b8378;
-    margin-left: 0px;    
+    margin-left: 0px;
     border: 1px solid white;
 }
 nav ul ul ul{
     background-color: #364c62;
     border-radius:10px 10px;
     margin-left: 0px;
-    
 }
-
 li:hover>ul{
     display: block;
     position: absolute;
-    font-weight: 800;    
+    font-weight: 800;
 }
-
-nav ul ul a {        
+ .b2:hover {
+   margin-bottom: 20px;
+   }
+nav ul ul a {
         padding: 0px 10px 0px;
 }
-nav ul ul  ul a {        
+nav ul ul  ul a {
         padding: 0px 10px 0px;
 }
 
 
 li:hover li{
-    float:left;    
+    float:left;
 }
 
 
@@ -191,6 +196,14 @@ width: 100%;
 align: center;
 }
 
+/**********************************
+Projects
+***********************************/
+.b3b4-title{
+  text-align: center;
+  color: black;
+  text-decoration: underline; 
+}
 
 
 
@@ -202,7 +215,7 @@ COLORS
 /* site body */
 body {
   background-color: #fff;
-  color: #999;
+  color: black;
 }
 
 /* grey header */
@@ -239,6 +252,5 @@ nav a.selected, nav a:hover {
 
 /* ======= Footer ======= */
 footer {
-  
-}
 
+}
