@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Merriweather|Chalkboard');
+
+
+/*---------GENERAL------------
+Main colors:
+#F9F973 ; lemon yellow
+#247D7A ; dark green
+#2B5478 ; even darker green
+#DB760A ; orange
+
+*/
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lora','Merriweather', 'sans-serif';
+  margin: 0;  
+  font-size: 16px;
+  background: #fff;
+}
+
+.page-wrapper{
+
+}
+
+h1, h2, h3{
+  color: #2B5478 ;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  width: 95%;
+  margin: 10px auto;
+}
+.title1{
+   font-size: 2rem;
+   color:#fff;
+}
+.title {
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.wrapper{
+  max-width: 80%;
+  margin: auto;
+}
+/***HEM*******************************/
+/*#logo{
+  padding-top:-1%;
+}*/
+
+#logo img{ 
+    max-height: 80px;
+}
+
+#homeContent{
+  max-width: 85%;
+  margin: auto;
+}
+p::first-letter {
+    font-size: 120%;
+    color: #2B5478;
+    font-weight: 700;
+}
+
+.bitcoin{
+  position: relative;
+  height: 2.5rem;
+  top:0.5rem;
+  color: #2B5478;
+}
+
+#home{
+  margin: auto; 
+  background: #c77965;
+  padding-top: 1rem;;
+  padding-bottom: 1rem;
+}
+
+
+#home .col-5{
+  float: left;
+}
+.mainPic img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;    
+}
+
+#home .title {
+  color: #fff;
+  padding: 0;  
+}  
+
+ .col-61 {
+      width: calc(100% / 12 * 6);
+    }
+/*-----------------NAV-----------------*/
+nav{
+  float: right;
+  margin-top: -9rem;
+}
+.menu{
+  left:-8rem;
+}
+
+label img{
+  max-height: 3rem;
+  padding-top: 1%;
+  color: #fff;
+}
+label {
+  height: 3rem;
+}
+
+ .toggle, [id^=drop] {
+ display: none;}
+ 
+ nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 0 1rem;
+  color: #2B5478;
+  font-size: 1rem;
+  line-height: 4rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav ul li ul li:hover { background: #247D7A; }
+
+nav a:hover { background-color: #2B5478; color: #FFF; }
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul li:hover > ul { display: inherit; }
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+/*li > a:after { content: ' +'; }
+
+li > a:only-child:after { content: ''; }*/
+
+
+/*-----Search Box------*/
+input {
+  position: relative;
+	outline: none;
+  float: right;
+  right:3rem;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+  box-sizing: content-box;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+input[type=search] {
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1.5px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+  
+  opacity: .8;
+}
+
+input[type=search]:focus {
+	width: 230px;
+	background-color: #fff;
+	border-color: #2B5478;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+/***VAD HAR VI GJORT*********************/
+
+#portfolio {
+  margin: auto;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.portfolio-item {
+  border: 4px solid #DC9447;
+  background: url('images/dammy.jpg') no-repeat center 1%;
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  -webkit-transition: background .2s; 
+  transition: background .2s;
+}
+
+.portfolio-item p {
+  display: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.portfolio-item:hover {
+  background: #DC9447;
+}
+
+.portfolio-item:hover p {
+  display: block;
+}
+
+#portfolio{
+  clear: both;
+  background: #c77965;
+}
+/***VAD ERBJUDER VI*********************/
+#services h1, h3 {
+  text-align: center;
+}
+
+#services h1 .title{
+  text-align: center;
+  color: #247D7A;
+}
+#services div img {
+  display: block;
+  margin: auto;
+}
+
+section + #services{
+  clear: both;
+  clear:inherit;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #fff;
+}
+
+.col-41 {
+      width: calc(100% / 12 * 4);
+    }
+    
+#upp{
+  clear: both;
+  background-color: red;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  opacity: .8;
+}
+#upp img{
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 1.5rem;
+  width: 1.5rem;
+  top:.4rem;
+}
+
+/***KONTAKTA OSSS*********************/
+#contact div {
+    margin-left: 3.5%;
+    display: inline-block; }
+.contact-info {
+    position: relative;
+    bottom:8.5em;
+    margin-left: 2%; }
+    
+ .contact-map>iframe{
+    width: 100%; }  
+    
+/*----------FOOTER------------*/    
+footer{
+  clear: both;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  background: #247D7A;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0 15px;
+  text-align: center;
+  border-right: #DC9447 3px solid;
+}
+
+footer a:last-child{
+  border: none;
+}
+
+footer a:hover{
+  color: #2B5478;
+  background: #fff;
+  padding:15px;
+  transition: .2s ease-in;
+}
+
+
+
+
+
+/*------- Screen size ----------------*/
+@media all and (max-width: 1200px) {  
+  .menu{
+    left: -1rem;
+    font-size: 0rem;
+    }
+  
+    nav a {
+    padding: 0 10px;
+    }
+    
+    input{
+      margin-top: 10px;
+    }
+    
+    input[type=search]:focus {
+    width: 140px;
+    }
+  }
+
+  .title{
+    font-size: 1.7rem;
+  }
+
+@media all and (max-width: 768px) {  
+/*-----Home----*/
+ #logo {
+  max-width: 95%;
+}
+ input{
+   right: 1rem;
+ }
+/*-----Vad erbjuder vi----*/    
+  .col-41, .col-61{
+    width: 100%;
+  }
+
+  #services{
+  padding-top: 0;
+  padding-bottom: 0;
+  }
+    
+  #services h1{
+    padding-bottom: 2%;
+  }
+    
+/*------NAV-------*/
+
+nav { 
+  margin: 0; 
+  margin-top: -7.5rem;
+}
+
+nav label{
+  text-align: right;
+}
+
+nav ul {
+  text-align: left;
+  background-color: #E3CDA4;
+}
+
+.toggle + a,
+ .menu { display: none; }
+
+.toggle {
+  position: relative;
+  left: -1rem;
+  display: block;
+  background-color: #2B5478;
+  border-radius: 5px;
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  border: none;
+  transition: ease-in .2s;
+  -webkit-transition: ease-in .2s;
+  -o-transition: ease-in .2s;
+  -moz-transition: ease-in .2s;
+}
+
+.toggle:hover { background-color: #DB760A; }
+
+[id^=drop]:checked + ul { display: block; }
+
+nav ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul .toggle,
+ nav ul ul a { padding: 0 20px;}
+
+nav a:hover,
+ nav ul ul ul a { background-color: #DB760A; }
+    
+/***VAD HAR VI GJORT*********************/
+.portfolio-item p {
+    font-size: 1.5rem;
+}    
+ 
+/*Contact Oss */
+
+.contact-info {    
+    bottom: 0;     
+    text-align: center; }
+.contact-map {    
+    text-align: center; }
+}
+
+@media (min-width:481px) {
+    [class^="col-"] {
+      float: left;
+      padding: 0 1rem;
+    }
+
+    .col-4 {
+      width: calc(100% / 12 * 4);
+    }
+.wrapper{
+  max-width: 90%;
+}    
+    
+    /* Vilka är vi? */
+.line-separator{
+  height: 1px;
+  background:black;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.title{
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #2B5478 ;
+}
+
+.floating-box{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:220px;
+    
+}
+.after-box{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:220px;
+  background-color: #247D7A;
+}
+.floating-box1{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:420px;
+  }      
+   
+.after-box1{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:420px;
+  background-color: #247D7A;
+}
+.after-box2{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:220px;
+  background-color: #247D7A;
+}
+.floating-box2{
+  display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:220px;
+}
+
+} 
+
+@media all and (max-width: 620px) {  
+  .hideMe{
+    display: none;
+  }
+}
