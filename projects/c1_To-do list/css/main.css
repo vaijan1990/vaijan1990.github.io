@@ -1,0 +1,33 @@
+body {
+  font-family: 'Indie Flower', cursive; }
+
+.container .jumbotron, .container-fluid .jumbotron {
+  background-color: #8CB9DE;
+  border: 15px solid #4E5052;
+  border-radius: 30px;
+  text-align: center; }
+  .container .jumbotron input, .container-fluid .jumbotron input {
+    width: 80%; }
+  .container .jumbotron label, .container-fluid .jumbotron label {
+    color: red;
+    font-weight: bold;
+    visibility: hidden; }
+
+.completedTasksContainer {
+  background: #80E8CE;
+  border: 5px solid #7f8c8d;
+  border-style: ridge;
+  border-bottom-right-radius: 25%; }
+
+.incompleteTasksContainer {
+  background: #e67e22;
+  border: 5px solid #7f8c8d;
+  border-style: ridge;
+  border-top-left-radius: 25%; }
+
+.incompleteTasksContainer h4, .completedTasksContainer h4 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold; }
+
+/*# sourceMappingURL=main.css.map */

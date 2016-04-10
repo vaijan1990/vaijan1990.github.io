@@ -1,0 +1,41 @@
+body {
+  font-family: 'Indie Flower', cursive;
+}
+
+// Main container - where we enter the new tasks
+.container .jumbotron, .container-fluid .jumbotron {
+    background-color: #8CB9DE;
+    border: 15px solid #4E5052;
+    border-radius: 30px;
+    text-align: center;
+    input{
+      width: 80%;
+    }
+    label{
+      color: red;
+      font-weight: bold;
+      visibility: hidden;
+    }
+}
+
+//incompleted tasks
+.completedTasksContainer {
+  background: #80E8CE;
+  border: 5px solid #7f8c8d;
+  border-style:ridge;
+  border-bottom-right-radius: 25%;
+}
+// Complete tasks
+.incompleteTasksContainer {
+  background: #e67e22;
+  border: 5px solid #7f8c8d;
+  border-style:ridge;
+  border-top-left-radius: 25%;
+}
+.incompleteTasksContainer, .completedTasksContainer {
+h4 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+}
