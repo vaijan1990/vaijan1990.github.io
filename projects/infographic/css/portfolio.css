@@ -1,0 +1,153 @@
+
+/******************************Portfolio page******************************/
+
+
+/*Making SVG responsive*/
+
+
+/*sUMMARY*/
+.jumbotron {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.vertical_line {
+  border-left: 2px yellow solid;
+  height: 57%;
+  position: absolute;
+  height: 58%;
+  left: 50%;
+  z-index: -1;
+
+}
+#start {
+  border-bottom: 1.5px white solid;
+  position: relative;
+}
+
+/*content for each year*/
+.bachelors, .swedish, .lernia{
+  background-color: #6DBFA4;
+  padding: 2px;
+  width: 200px;
+  position: absolute;
+  color: black;
+  left: 34%;
+  height: 10%;
+  border-radius: 25px 0px 0px 0px;
+  text-align:  center;
+  border: 2px #E8E8E8 solid;
+}
+.swedish {
+  height: 18%;
+  /*z-index: -1;*/
+}
+#button2015, #button2016{
+  position: relative;
+    z-index: 1;
+}
+.lernia {
+  width : 300px;
+  left: 18%;
+}
+
+
+.jobExperience{
+  background-color: #DB698E;
+  width: 300px;
+  position: absolute;
+  height: 10%;
+  color: black;
+  right: 23%;
+  border-radius: 0px 25px 0px 0px;
+  border: 2px #E8E8E8 solid;
+  text-align:  center;
+}
+#jobTata{
+  height: 12%;
+}
+ /*Changing visibility of all paragraph elements*/
+
+.bachelors p,.jobExperience p, .swedish p, .lernia p{
+  visibility: hidden;
+  font-size: 13px;
+}
+
+/*Hobbies*/
+#hobbiesImage {
+  width: 100%;
+}
+#certificationImage{
+  width: 90%;
+}
+/*'''''Language section*/
+.language ul {
+    list-style: none;
+}
+.language li:before {
+    content: "";
+    border-color: transparent #C7BFC2;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    top: 0.9em;
+    position: relative;
+}
+
+/*Media query*/
+
+/*For tablet*/
+@media (max-width:1025px) {
+   /*The summary section*/
+  .bachelors p,.jobExperience p, .swedish p, .lernia p{
+    font-size: 9.5px;
+  }
+  .bachelors, .swedish, .lernia{
+    width: 200px;
+    font-size: 10px;
+    left : 21%;
+
+}
+.jobExperience {
+width: 200px;
+font-size: 10px;
+
+}
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 10px;
+    }
+     .nav li{
+      display: inline-block;
+    }
+    .nav li a{
+      padding: 0;
+      padding-bottom: 30px;
+      padding-right: 10px;
+      margin: 0;
+      text-decoration: underline;
+    }
+
+    /*summary section*/
+
+    .bachelors p,.jobExperience p, .swedish p, .lernia p{
+      font-size: 5px;
+    }
+    .bachelors, .swedish, .lernia{
+      width: 60px;
+      font-size: 5px;
+      left : 18%;
+
+}
+.jobExperience {
+  width: 60px;
+  font-size: 5px;
+
+}
+}
