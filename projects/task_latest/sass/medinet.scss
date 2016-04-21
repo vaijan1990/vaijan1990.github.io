@@ -2,17 +2,35 @@ body {
 font-family: 'Antic Slab', serif;
 }
 .header {
-  background: grey;  
+  background: grey;
   padding: 0;
   margin: 0;
 
-  li{
+ul{
     list-style: none;
-  }
-  img {
+    @media screen and (max-width: 990px) {
+      text-decoration: underline;
+      text-align: center;
+      padding: 0;
+      }
+
+      li{
+        @media screen and (max-width: 990px) {
+        display: inline-block;
+      }
+    }
+}
+img {
     width:100%;
+    @media screen and (max-width: 990px) {
+     width: 20%;
+     position: relative;
+     top: 50%;
+     left: 30%;
+   }
   }
 }
+
 #course-container, #activity-container, #schedule-container{
   h2 {
     font-size: 2em;
@@ -37,8 +55,11 @@ font-family: 'Antic Slab', serif;
   height: 200px;
   background: #CACBCC;
 }
+
 footer {
   background: black;
   padding: 20px;
   color: white;
+  margin-top: 200px;
+
 }

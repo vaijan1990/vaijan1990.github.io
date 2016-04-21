@@ -1,40 +1,76 @@
+/*Body*/
 body {
-  font-family: 'Antic Slab', serif; }
-
+    font-family: 'Antic Slab',serif;
+}
+/*Header section*/
 .header {
-  background: grey;
-  padding: 0;
-  margin: 0; }
-  .header li {
-    list-style: none; }
-  .header img {
-    width: 100%; }
+    background: grey;
+    padding: 0;
+    margin: 0;
+}
+.header ul {
+    list-style: none;
+}
 
-#course-container h2, #activity-container h2, #schedule-container h2 {
-  font-size: 2em;
-  text-align: center;
-  text-decoration: underline;
-  padding: 20px;
-  background-color: #CACBCC; }
+.header img {
+    width: 100%;
+}
 
+/*Sections*/
+#course-container h2,#activity-container h2,#schedule-container h2 {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+    background-color: #CACBCC;
+}
+/*Parent containers*/
 #parent1 {
-  width: 500px;
-  height: 500px;
-  background: #CACBCC; }
+    width: 500px;
+    height: 500px;
+    background: #CACBCC;
+}
 
 #parent2 {
-  width: 300px;
-  height: 300px;
-  background: #CACBCC; }
+    width: 300px;
+    height: 300px;
+    background: #CACBCC;
+}
 
 #parent3 {
-  width: 800px;
-  height: 200px;
-  background: #CACBCC; }
+    width: 800px;
+    height: 200px;
+    background: #CACBCC;
+}
 
+/*Footer*/
 footer {
-  background: black;
-  padding: 20px;
-  color: white; }
+    background: #000;
+    padding: 20px;
+    color: #fff;
+    margin-top: 200px;
+}
 
+/*Media Query for header*/
+@media screen and (max-width: 990px) {
+    .header ul {
+        text-decoration: underline;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header ul li {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 990px) {
+    .header img {
+        width: 20%;
+        position: relative;
+        top: 50%;
+        left: 30%;
+    }
+}
 /*# sourceMappingURL=medinet.css.map */

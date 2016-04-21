@@ -1,38 +1,40 @@
-//For scrolling down
+//Declarations
+var idArray = [];
 
+//For smooth scrolling down function
 $(function() {
-    $('body').on('click', '.page-scroll a', function(event) {
+    $('body').on('click', 'a', function(event) {
         var $anchor = $(this);
-        $('html, body').stop().animate({
+      event.preventDefault();
+        $('html, body').animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+        }, 1000);
     });
 });
-var idArray = [];
-//For reusing HTML
+
+//For reusing HTML block
 $(window).load(function() {
   var html = '<div class="row header">';
-  html += '<div class="col-sm-3">';
+  html += '<div class="col-md-3">';
   html += '<img src="images/people.png" alt="Mountain View"></div>';
-  html += '<div class="col-sm-9"> <ul> <div class="row">' ;
+  html += '<div class="col-md-9"> <ul> <div class="row">' ;
   html += '<li><span>First Name</span></li></div>';
   html += '<div class="row"> <li><span>Last Name</span></li> </div>';
-  html += '<div class="row"> <li><span>Number<span></li> </div>';
-  html += '<div class="row"> <li><span>Email</span></li>  </div> </div> </div> ';
+  html += '<div class="row"> <li><span>+46(0)8244220<span></li> </div>';
+  html += '<div class="row"> <li><span>support@medinet.se</span></li>  </div> </div> </div> ';
 
 //Dynamically adding to each parent
-
   $('.parent').each(function () {
       var ar = this.id;
       idArray.push(ar);
   });
-
 numberOfParent = idArray.length;
-
 if(numberOfParent != 0) {
   for(var i = 0; i < numberOfParent; i +=1) {
     $('#'+idArray[i]).append(html);
+
+// Resizing the header under each parent depending on the width.
+// Note: The formula can be altered based on height of parent or combination of both depending on application requirement
     var width = .05 * $('#'+idArray[i]).width();
     $('#'+idArray[i]).css('font-size', width+"px" );
 
@@ -45,13 +47,6 @@ if(numberOfParent != 0) {
     //      console.log($('#'+idArray[1]).find(".header").css('font-size'));
     //     //  console.log((parseInt($('#'+idArray[1]).find("img").css('width')) - 1) + "%" );
     //   }
-
-
-
-
-
-    // console.log($('#'+idArray[i]).find('.header').height());
-    // $('#'+idArray[i]).find(".header").css('font-size',($('#'+idArray[i]).find('.header').height())*0.15);
-}
-}
+    }
+  }
 });
