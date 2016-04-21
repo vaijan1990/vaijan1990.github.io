@@ -18,7 +18,7 @@ $(window).load(function() {
   html += '<div class="col-sm-9"> <ul> <div class="row">' ;
   html += '<li><span>First Name</span></li></div>';
   html += '<div class="row"> <li><span>Last Name</span></li> </div>';
-  html += '<div class="row"> <li><span>Nummber<span></li> </div>';
+  html += '<div class="row"> <li><span>Number<span></li> </div>';
   html += '<div class="row"> <li><span>Email</span></li>  </div> </div> </div> ';
 
 //Dynamically adding to each parent
@@ -33,8 +33,8 @@ numberOfParent = idArray.length;
 if(numberOfParent != 0) {
   for(var i = 0; i < numberOfParent; i +=1) {
     $('#'+idArray[i]).append(html);
-    var height = .125 * $('#'+idArray[i]).height();
-    $('#'+idArray[i]).css('font-size', height+"px" );
+    var width = .05 * $('#'+idArray[i]).width();
+    $('#'+idArray[i]).css('font-size', width+"px" );
 
     // while( $('#'+idArray[1]).find(".header").height() > 60 ){
     //     console.log($('#'+idArray[1]).find(".header").height());
