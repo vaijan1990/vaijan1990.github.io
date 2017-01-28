@@ -10,7 +10,13 @@ importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js');
 firebase.initializeApp({
   'messagingSenderId': '5898210848'
 });
-
+var config = {
+  apiKey: "AIzaSyAMmou9q4KO-XVjbIKqHPIbkO3RImg_Wg4",
+  authDomain: "push-notification-sample-fe79d.firebaseapp.com",
+  databaseURL: "https://push-notification-sample-fe79d.firebaseio.com",
+  storageBucket: "push-notification-sample-fe79d.appspot.com",
+  messagingSenderId: "5898210848"
+};
 // Retrieve an instance of Firebase Messaging so that it can handle background
 // messages.
 const messaging = firebase.messaging();
