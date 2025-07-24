@@ -1,57 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janani | Portfolio</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>Janani portfolio</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="coffee.icon">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
-</head>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body background="images/developer.jpg">
-  <header>
-    <a href="index.html" id="logo">
-      <h1>Vaisshnavi Janani</h1>
-      <h2>Passionate UI Developer</h2>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="selected">Portfolio</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="#">My Projects</a>
-            <ul>
-                <li><a href="projects/infographic/skiss.html">Infographic</a></li>
-                <li><a href="projects/Ponomobile/index.html">Pono Mobile Web</a></li>
-                <li><a href="projects/c1_To-do list/index.html">To-do Application</a></li>
-				<li><a href="projects/task_latest/index.html">Medinet code</a></li>
-                <li><a href="projects/project3/applepie.html">Applepie</a></li>
-                <li class = "b2"><a href="#">CSS garden</a>
-                <ul><li><a href="projects/b2/skiss.html">Skiss</a></li>
-                <li><a href="projects/b2/index.html">Code</a></li>
-                </ul></li>
-                <li><a href="projects/lekmedform/index.html">Lek med form</a></li>
-                <li class = "b2"><a href="#">Book Find</a>
-                <ul><li><a href="projects/Prototype/design.html">Design</a></li>
-                <li><a href="projects/Prototype/index.html">Code</a></li>
-                </ul></li>
-                <li class="reflection"><a href="projects/project b3 and b4.html">B3 and B4 Skiss</a></li>
+    <!-- Favicon -->
+    <link rel="icon" href="coffee.icon" type="image/x-icon" />
+
+    <!-- Normalize & Custom CSS -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- Optional Animation CSS (for example only) -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        background: url("images/developer.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        text-align: center;
+        animation: slideDown 1s ease-out;
+      }
+
+      header h1,
+      header h2 {
+        margin: 0;
+        font-family: "Changa One", cursive;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      nav ul li {
+        position: relative;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 6px;
+        transition: background 0.3s;
+      }
+
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      nav ul li:hover > ul {
+        display: block;
+      }
+
+      #portfolio {
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.3);
+        max-width: 800px;
+        margin: 40px auto;
+        border-radius: 12px;
+        color: white;
+        animation: fadeIn 2s ease-in;
+        height: fit-content;
+      }
+
+      #portfolio p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Janani</h1>
+        <h2>Creative Frontend Developer & Strategic People Leader</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="selected">Portfolio</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li>
+            <a href="#">My Projects</a>
+            <ul class="project-list">
+              <li>
+                <a href="projects/crackit/index.html">Play Quiz</a>
+              </li>
+              <li><a href="projects/infographic/skiss.html">Infographic</a></li>
+              <li>
+                <a href="projects/Ponomobile/index.html">Pono Mobile Web</a>
+              </li>
+              <li>
+                <a href="projects/c1_To-do list/index.html"
+                  >To-do Application</a
+                >
+              </li>
+              <li>
+                <a href="projects/task_latest/index.html">Medinet code</a>
+              </li>
+              <li><a href="projects/project3/applepie.html">Applepie</a></li>
+              <li>
+                <a href="#">CSS Garden</a>
+                <ul>
+                  <li><a href="projects/b2/skiss.html">Skiss</a></li>
+                  <li><a href="projects/b2/index.html">Code</a></li>
+                </ul>
+              </li>
+              <li><a href="projects/lekmedform/index.html">Lek med form</a></li>
+              <li>
+                <a href="#">Book Find</a>
+                <ul>
+                  <li><a href="projects/Prototype/design.html">Design</a></li>
+                  <li><a href="projects/Prototype/index.html">Code</a></li>
+                </ul>
+              </li>
             </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-	<li><a href="pushSample/quickstart.html">PushSample</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="portfolio">
-  UI developer
-  <p>Here you can see my profile, my projects and contact information </p>
-  </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-
-
-</body>
-
+    <section id="portfolio">
+      <p>
+        Welcome to my portfolio — where design meets technology. Here, you’ll
+        find my profile, projects, and ways to connect.
+      </p>
+      <p>
+        I'm a passionate frontend developer with 13+ years of experience,
+        creating user-focused digital experiences that blend engineering, UX,
+        and AI. Explore my work and get in touch!
+      </p>
+    </section>
+  </body>
 </html>
