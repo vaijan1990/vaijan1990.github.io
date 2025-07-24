@@ -7,8 +7,6 @@ body {
 }
 
 #wrapper {
-  max-width: 940px;
-  margin: 0 auto;
   padding: 0 5%;
 }
 
@@ -178,7 +176,7 @@ PAGE: ABOUT
 .profile-content{
     display: inline-block;
     width: 100%;
-    border: 1px solid #34495e;
+    font-weight: 600;
     padding: 20px;
     overflow: hidden;
 }
@@ -192,8 +190,7 @@ PAGE: CONTACT
   color: #34495e;
 }
 .google-maps {
-width: 100%;
-align: center;
+text-align: left;
 }
 
 /**********************************
@@ -202,7 +199,7 @@ Projects
 .b3b4-title{
   text-align: center;
   color: black;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 
@@ -250,7 +247,53 @@ nav a.selected, nav a:hover {
   color: #bdc3c7;
 }
 
-/* ======= Footer ======= */
-footer {
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: #333;
+}
 
+.project-list > li {
+  width: 200px;
+  position: relative;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.project-list a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.project-list li ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 210px;
+  list-style: none;
+  padding: 0;
+  color: #333;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 100;
+}
+
+.project-list li:hover > ul {
+  display: block;
+}
+
+.project-list li ul li {
+  width: 180px;
+}
+
+.project-list li ul a {
+  background: #f9f9f9;
 }
